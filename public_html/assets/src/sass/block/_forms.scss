@@ -1,0 +1,72 @@
+// ===================================================================
+// form_body
+// ===================================================================
+.form_body {
+    dl { margin-bottom: 3%; }
+    dt { font-weight: normal; margin-bottom: 0.5em;
+      sup { color:$cat_color_00; font-size: 90%; margin-left: 0.5em; }
+    }
+    dd {
+      input,textarea { width: 100%; padding: 0.8em 0.5em; box-sizing: border-box; border: 1px solid #434343; }
+      @media #{$small} {
+        input,textarea { font-size: 16px; }
+      }
+    }
+    p input.wpcf7-submit { width: 100%; color:#fff; background-color: #1b1b1b; border-radius:2px; text-align: center; border: none; padding: 1em; font-size: 130%; box-sizing: border-box; margin: 0 auto; }
+
+
+    span.important { color:red; text-decoration: underline; }
+
+    div.wpcf7 {
+      img.ajax-loader { width: 20px; height:20px; display: block; margin: 2% auto 0 !important; text-align: center; }
+      .wpcf7-response-output {
+      margin: 10px 0 0;
+      padding: 8px 35px 8px 14px;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+      border-radius: 4px;
+      }
+      .wpcf7-validation-errors {
+        color: #B94A48;
+        background-color: #F2DEDE;
+        border: 1px solid #EED3D7;
+      }
+      .wpcf7-mail-sent-ok {
+        color: #3A87AD;
+        background-color: #D9EDF7;
+        border: 1px solid #BCE8F1;
+      }
+    }
+    .btns_item { margin-top: 3%; }
+    .btns_item input { text-align: center; display: block; width: 100%; line-height: 1;
+      &[type=submit] { background: #02803c;
+        color: #fff;
+        width: 100%;
+        cursor: pointer;
+        border-style:none;
+      }
+      &[type=submit][disabled] { background: #337fb9; text-align: center;
+        color: #fff;
+        width: 100%;
+        opacity: 0.4;
+        cursor: default;
+      }
+      &[type=button] { background: #337fb9; color: #fff;
+        cursor: pointer;
+        &:hover { color: #fff; background: #333; border: none; transition: transform 0.35s, background 0.35s;}
+      }
+      &.wpcf7-submit,&.wpcf7-confirm  { padding: 1.5em 0; }
+      &.wpcf7-back { background-color: #333; padding: 0.5em; margin-top: 0.5em; }
+    }
+    img.ajax-loader { position: absolute; top: -30px; display: block; left:0; }
+    ul.btn_form { margin: 2em 0 0;
+      li {
+        input { width: 100%; background-color: #222; padding: 0.5em; text-align: center; color:#fff; border: none; }
+        &.submit input { padding: 2em 0; }
+    }
+  }
+}
+
+.wpcf7-response-output { text-align: center; padding: 1.5em !important; margin-top: 1em !important; }
+.wpcf7-validation-errors { border: 2px solid #f00; padding: 1.2em !important; width: 92.5%; margin-top: 1em !important; }
+.wpcf7-mail-sent-ok { border: 2px solid #337FB9; padding: 1.2em !important;  width: 92.5%; margin-top: 1em !important; }
+.screen-reader-response { display: none; }

@@ -1,0 +1,17 @@
+@charset "utf-8";
+// ===================================================================
+// 各SCSSファイルのインポート
+// ===================================================================
+
+@import "_reset";
+
+// core 各種設定
+@import "core/setting"; // sass 設定
+@import "core/print"; // 印刷 設定
+
+// block
+//@import "block/header";
+@import "block/footer";
+@import "block/forms";
+@import "block/module";
+@import "block/boxes";

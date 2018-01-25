@@ -1,0 +1,10 @@
+provision/
+node_modules/
+wp-includes/
+wp-admin/
+cgi-bin/
+error/
+html/
+icons/
+languages/
+images/
