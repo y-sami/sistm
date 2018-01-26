@@ -28,7 +28,7 @@
     }
       &:after { content:''; display: block; width: 44px; height:70px; background:url(../../../images/top/icon_scroll.png) no-repeat center top; background-size: cover; position: absolute; bottom:3%; left:50.5%; z-index:3; }
       @media #{$middle} { width: 30px; height:48px; }
-      @media #{$small} { padding-top: 50px;
+      @media #{$small} { padding-top: 50px; height:250px;
         #catch-copy { font-size: 6.5vw; line-height: 1.5;
           span { font-size: 2.2vw; width: 19em; }
         }
@@ -54,6 +54,10 @@
       p { font-size: $font-size-xs;
         strong { padding: 0 0.7em 1em; display: block; font-size: 22px; line-height: 1.68; }
       }
+    }
+    @media #{$mobile-side} { background:url(../../../images/top/bg_introduction.jpg) no-repeat center 50%; background-attachment: scroll;
+      .md-none { display: none; }
+      p strong { font-size: 3vw; }
     }
   } // introduction
 
@@ -199,11 +203,11 @@
         }
       }
     @media #{$small} {
-      .company-outline { padding: 15% 0 8%; height:100vh; background:url(../../../images/top/bg_company_xs.jpg) no-repeat;  background-position: 60% 0; background-size:200%; }
+      .company-outline { padding: 15% 0 3%; background:url(../../../images/top/bg_company_xs.jpg) no-repeat;  background-position: 60% 0; background-size:cover; }
       .en-ttl { position: absolute; top:0; left:-2%; }
-      .ja-ttl { text-align: center; width: 100%; }
+      .ja-ttl { text-align: center; width: 100%; margin-bottom: 5%; }
       .inner.xs { display: inline-block; padding: 3% 6%; }
-      dl { width: 100%; font-size: 14px; line-height: $shared-lh; color:#fff; flex-wrap:wrap; padding-bottom: 10%; }
+      dl { width: 100%; font-size: 14px; line-height: $shared-lh; color:#fff; flex-wrap:wrap; padding-bottom: 5%; }
       dt { width: 30%; }
       dd { width: 70%; margin-bottom: 1.5em;
         &.phone,a{ color:#fff; text-decoration: none; }

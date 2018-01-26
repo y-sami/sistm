@@ -1259,6 +1259,7 @@ ul.list_disc li {
 @media only screen and (max-width: 767px) {
   #home #catch-alpha {
     padding-top: 50px;
+    height: 250px;
   }
   #home #catch-alpha #catch-copy {
     font-size: 6.5vw;
@@ -1334,6 +1335,19 @@ ul.list_disc li {
     display: block;
     font-size: 22px;
     line-height: 1.68;
+  }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 767px) {
+  #home #introduction {
+    background: url(../../../images/top/bg_introduction.jpg) no-repeat center 50%;
+    background-attachment: scroll;
+  }
+  #home #introduction .md-none {
+    display: none;
+  }
+  #home #introduction p strong {
+    font-size: 3vw;
   }
 }
 
@@ -1844,11 +1858,10 @@ ul.list_disc li {
 
 @media only screen and (max-width: 767px) {
   #home #company .company-outline {
-    padding: 15% 0 8%;
-    height: 100vh;
+    padding: 15% 0 3%;
     background: url(../../../images/top/bg_company_xs.jpg) no-repeat;
     background-position: 60% 0;
-    background-size: 200%;
+    background-size: cover;
   }
   #home #company .en-ttl {
     position: absolute;
@@ -1858,6 +1871,7 @@ ul.list_disc li {
   #home #company .ja-ttl {
     text-align: center;
     width: 100%;
+    margin-bottom: 5%;
   }
   #home #company .inner.xs {
     display: inline-block;
@@ -1870,7 +1884,7 @@ ul.list_disc li {
     color: #fff;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
   #home #company dt {
     width: 30%;
