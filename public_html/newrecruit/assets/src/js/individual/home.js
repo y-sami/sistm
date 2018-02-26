@@ -53,16 +53,6 @@ $(function(){
     var timeoutId,ds,bt;
     bt = 80;
     ds = 0;
-    /*
-    function menuFixed(ds){
-        if (bt <= ds) {
-            $("#md-global").addClass('fixed').removeClass('relative');
-        } else if (bt >= ds) {
-            $("#md-global.fixed").animate({'top':'-50px'},{'duration':200,complete:function(){
-                $(this).removeClass('fixed').css('top','0').addClass('relative');
-            }});
-        }
-    }*/
     function menuFixed(ds){
         if (bt <= ds) {
             $("#md-global").addClass('fixed').removeClass('absolute');
@@ -76,19 +66,8 @@ $(function(){
         timer = setTimeout(function() {
           ds = $(this).scrollTop();
           menuFixed(ds);
-        }, 300 );
+        }, 80 );
       });
-    /*
-    window.addEventListener( "scroll", function () {
-    clearTimeout( timeoutId ) ;
-
-    timeoutId = setTimeout( function () {
-        ds = $(this).scrollTop();
-        console.log(ds);
-        menuFixed(ds);
-    }, 200 ) ;
-    }) ;
-    */
 });
 
 jQuery(document).ready(function($){

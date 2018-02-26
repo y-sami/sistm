@@ -652,15 +652,6 @@ body a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  .body-shared #md-global {
-    /*
-      &.fixed { position: fixed; top:0; left:0; z-index: 99; background-color:$accent_color_02; width: 100%; height:50px; animation: animationMenu 0.5s ease; @keyframes animationMenu { from { transform:translateY(-50px); } to { transform:translateY(0); }  }
-        .logo { padding-left: 20px; padding-top: 5px;
-          strong { display: block; width: 180px; height:33px;  background:url(../../images/logo_white.png) no-repeat top left; background-size:cover; }
-        }
-      }
-      */
-  }
   .body-shared #md-global .logo {
     width: 20%;
   }
@@ -802,13 +793,16 @@ body a:hover {
     display: inline-block;
     float: none;
   }
+  .body-shared #md-global.fixed ol li:last-child {
+    margin-right: 0;
+  }
   .body-shared #md-global.fixed ol a {
     color: #fff;
   }
   .body-shared #md-global.fixed ol a:hover {
     color: #003b83;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
   }
   .body-shared #md-global.fixed ol .no-link {
     color: #fff;
@@ -832,13 +826,13 @@ body a:hover {
   }
   .body-shared #md-global.fixed .btn-entry a:hover {
     background-color: #fff;
-    -webkit-transition: background-color 0.6s;
-    transition: background-color 0.6s;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
     color: #003b83;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .body-shared #md-global.relative .logo, .body-shared #md-global.absolute .logo {
     padding-left: 15px;
     padding-top: 10px;
@@ -848,8 +842,8 @@ body a:hover {
     height: 44.5px;
   }
   .body-shared #md-global.relative ol li, .body-shared #md-global.absolute ol li {
-    margin-right: 10px;
-    font-size: 12px;
+    margin-right: 15px;
+    font-size: 1.5vw;
   }
   .body-shared #md-global.relative .btn-entry, .body-shared #md-global.absolute .btn-entry {
     width: 90px;
@@ -863,8 +857,11 @@ body a:hover {
     background-size: 75%;
   }
   .body-shared #md-global.fixed ol li {
-    margin-right: 10px;
-    font-size: 12px;
+    margin-right: 15px;
+    font-size: 1.5vw;
+  }
+  .body-shared #md-global.fixed ol li:last-child {
+    margin-right: 0;
   }
   .body-shared #md-global.fixed .btn-entry {
     -ms-flex-preferred-size: 120px;
@@ -877,66 +874,45 @@ body a:hover {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  #home2 #md-global.absolute .logo {
-    width: 300px;
-    height: 54.3px;
-    background-size: cover;
-    top: 25px;
-    left: 25px;
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+  .body-shared #md-global.relative .logo, .body-shared #md-global.absolute .logo {
+    padding-left: 15px;
+    padding-top: 10px;
   }
-  #home2 #md-global.absolute ol {
-    right: 130px;
-    top: 40px;
-    font-size: 1.55vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .body-shared #md-global.relative .logo strong, .body-shared #md-global.absolute .logo strong {
     width: 250px;
+    height: 44.5px;
   }
-  #home2 #md-global.absolute ol li {
-    width: 50%;
-    text-align: left;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    float: none;
+  .body-shared #md-global.relative ol li, .body-shared #md-global.absolute ol li {
+    margin-right: 13px;
+    font-size: 14px;
+  }
+  .body-shared #md-global.relative .btn-entry, .body-shared #md-global.absolute .btn-entry {
+    width: 90px;
+  }
+  .body-shared #md-global.relative .btn-entry a, .body-shared #md-global.absolute .btn-entry a {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 20px;
+    background-position: bottom 25% right 40%;
+    background-size: 75%;
+  }
+  .body-shared #md-global.fixed ol li {
+    margin-right: 13px;
+    font-size: 14px;
+  }
+  .body-shared #md-global.fixed ol li:last-child {
     margin-right: 0;
-    margin-bottom: 1em;
   }
-  #home2 #md-global.absolute .btn-entry a {
-    width: 120px;
-    height: 120px;
-    font-size: 2.5vw;
-    line-height: 120px;
+  .body-shared #md-global.fixed .btn-entry {
+    -ms-flex-preferred-size: 120px;
+        flex-basis: 120px;
   }
-  #home2 #md-global.fixed ol {
-    list-style: none;
-    width: 85%;
-    padding-top: 15px;
-    padding-left: 15%;
-  }
-  #home2 #md-global.fixed ol li {
-    margin-right: 20px;
-  }
-  #home2 #md-global.fixed ol a {
-    color: #fff;
-    font-weight: normal;
-    font-size: 13px;
-  }
-  #home2 #md-global.fixed ol a:hover {
-    color: #003b83;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s;
-  }
-  #home2 #md-global.fixed .btn-entry {
-    width: 20%;
-    height: 50px;
-    line-height: 50px;
-  }
-  #home2 #md-global.fixed .btn-entry a {
-    font-size: 2.2vw;
+  .body-shared #md-global.fixed .btn-entry a {
+    font-size: 20px;
+    background-position: bottom -15px right 10px;
+    background-size: 50%;
   }
 }
 
