@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+// ===================================================================
+// footer
+// ===================================================================
+
+footer { padding-bottom: 2%;
+  .btn-entry { width: 100%; margin: 3% 0;
+    li { align-self:center; width: 50%;  }
+    a { color:#fff; padding: 8% 0; width: 100%; text-align: center; text-decoration: none; display: block; font-size: 20px; font-weight: normal; letter-spacing: 0.1em; position: relative;
+      &:after { font-family:fontAwesome; content:'\f105'; position: absolute; right:2%; font-size: 120%; }
+      &:hover { background-color:#efefef; transition: background-color 0.6s; }
+    }
+    .new-graduate { background: repeating-linear-gradient(-45deg,#064592,#064592 18px,#003b83 18px,#003b83 24px); }
+    .career { background: repeating-linear-gradient(-45deg,#21a0e8,#21a0e8 18px,#159be7 18px,#159be7 24px); }
+  }
+  @media #{$over-middle} {
+    .footer-nav { width: 85%; margin: 0 auto;
+      li { width:calc(100% / 7); text-align: center; font-size: 14px; color:$accent-color-01;
+        &:not(:last-child) { border-right:1px solid #000; }
+      }
+    }
+    #logo-footer { width: 400px; margin: 3% auto; line-height: $shared-lh; color:$accent-color-01;
+      dd { text-align: center; font-size: 13px; padding-top: 1em; }
+    }
+  }
+   @media #{$middle} {
+    .footer-nav { width: 100%; margin: 0 auto; font-size: 1.2vw; flex-wrap:wrap;
+        li { width: 24%; margin-bottom: 0.8em; }
+      }
+      #logo-footer dd { font-size: 1.4vw; }
+    }
+  @media #{$small} { padding-bottom: 5%;
+    .btn-entry { display: block; margin: 8% 0 5%;
+      li { width: 100% }
+    }
+    .footer-nav { display: none; }
+    #logo-footer { padding: 0 5%;
+      dd { font-size:13px; text-align: center; margin: 3% 0; line-height: $shared-lh; color:$accent-color-01; }
+    }
+  }
+  #copyright { font-size: 13px; text-align: center; color:$accent-color-01; }
+}
+#btn-top-scroll { width: 80px; height:65px; position: fixed; right:0; bottom:0; background-color: $accent-color-02; display: block; text-align: center; color:#fff; padding-top: 10px; box-sizing: border-box; border-radius: 5px 5px 0 0; z-index:999;
+  span { font-size: 12px; display: block; padding-top: 0.3em; }
+  i { font-size: 170%; }
+  &:hover { background-color: $accent-color-01; transition:background-color 0.2s; }
+  @media #{$small} { width: 50px; height:40px;
+    span { display: none; }
+  }
+}

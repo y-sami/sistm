@@ -1,0 +1,132 @@
+@charset "utf-8";
+// ===================================================================
+// 設定
+// ===================================================================
+
+// base
+$base-font: -apple-system,'Lucida Grande','Helvetica Neue','Hiragino Kaku Gothic ProN', '游ゴシック','メイリオ',meiryo,sans-serif;
+
+$font-ttl: 'source-han-sans-japanese',-apple-system,'Lucida Grande','Helvetica Neue','Hiragino Kaku Gothic ProN', '游ゴシック','メイリオ',meiryo,sans-serif;
+// accent
+$font-min: 'source-han-serif-japanese','Hiragino Mincho ProN','HG明朝E','ＭＳ Ｐ明朝', serif;
+
+// google-font
+$font-en-sub-ttl: 'Didact Gothic', sans-serif;
+// custum font
+$cus-en: 'Montserrat', sans-serif;
+
+$shared-lh:1.86;
+$border-color: #e5e5e5;
+$border-color-hover: #e5e5e5;
+
+$small:  "only screen and (max-width:767px)";
+$mobile-side:  "only screen and (min-width:440px) and (max-width:767px)";
+$middle: "only screen and (min-width:768px) and (max-width:991px)";
+$large:  "only screen and (min-width:992px)";
+$xlarge:  "only screen and (min-width:1200px)";
+$over-middle: "only screen and (min-width:768px)";
+$tablet: "only screen and (min-width:768px) and (max-width:1366px)";
+$nav:"only screen and (min-width:300px) and (max-width:1366px)";
+
+// メインカラー（ベースカラー）
+$main-color: #00428e;
+
+// サブカラー
+$sub-color: #008fe8;
+
+// ベーステキストカラー
+$base-color: #111;
+$title-color: #0c1f44;
+$lead-color:#003366;
+
+// アクセントカラー
+$accent-color-01: #003b83;
+$accent-color-02: #0081cc;
+$accent-color-03: #6fd1b2;
+$accent-color-05: #dca7d9;
+$accent-color-06: #a0ce84;
+$accent-color-07: #909ed3;
+
+
+
+// カテゴリーカラー
+$cat-color-00: #e60012; // base home news contact
+$cat-color-01: #00a0e9; // 当協会について
+$cat-color-02: #23ac38; // 協会概要
+$cat-color-03: #f7ee13; // 事業内容
+$cat-color-04: #e6737c; // 提供プログラム
+$cat-color-05: #74c3e8; // イベント情報
+$cat-color-06: #d2d2d2; // お問い合わせ
+$cat-color-07: #ef7c17;
+
+$bg-color-01: #0d1f43; // footer 紺色
+$bg-color-01-hover: #0f2e6a; // 紺色 hover
+$bg-color-02: #f3f1ea;
+$bg-color-03: #55bfff; // home cnt02,04
+$bg-color-04: #efcb4c; // home cnt03
+$bg-color-05: #0f1e45; // 本社・工場 ボックス背景
+
+
+
+
+
+// ベースリンクカラー
+$link-color: #d50b15;
+$link-color-visited: #642642;
+$link-color-hover: #f3f3f3;
+$link-color-active: #008fe8;
+$link-color-btn: #9c191e;
+
+// ホワイトカラー
+$link-white: #fff;
+$text-white: #fff;
+
+// コンテンツのフォントサイズ
+/*
+$base-size: 100%;
+$navi-size: 0.86rem;
+$small-size: 0.83rem;
+$small-size02: 0.90rem;
+$large-size: 1rem;
+$large-size02: 1.1rem;
+*/
+
+$base-size: 100%;
+$navi-size: 85%;
+$small-size01: 90%;
+$small-size02: 85%;
+$small-size03: 80%;
+$small-size04: 75%;
+
+$font-size-xs: 14px;
+/*
+$box-title-size: 1.5rem;
+$con-title-size: 1.3rem;
+$con-title-size-xs: 1.15rem;
+*/
+
+$title-size: 150%;
+$title-size-xs: 120%;
+$catch-size: 1.2rem;
+$wrap-ttl: 1.35rem;
+$wrap-ttl-sub: 1.2rem;
+$wrap-ttl-xs: 1.5rem;
+$wrap-ttl-sub-xs: 0.9rem;
+
+
+// ボーダーカラー
+$section-title-boarder:1px solid #e9eaed;
+$submenu-boarder:1px solid #e9eaed;
+
+
+%base-text { font-size:$base-size; line-height: 1.86; }
+%base-layout-inner-md { width: 940px; margin: 0 auto; }
+%base-layout-inner-xs { width: 94%; margin: 0 auto; }
+
+// レイアウト共通設定
+%layout-box-site-md { width:940px; margin: 0 auto; }
+%layout-box-site-xs { width:100%; margin: 0 auto; }
+$layout-margin-md : 10px auto;
+$layout-margin-xs : 2% auto;
+$shared-margin : 40px;
+

@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 ;
 
 // 各種作業ファイルを指定するよ
-var assets_folfer = './public_html/assets/',
+var assets_folfer = './public_html/newrecruit/assets/',
     src = assets_folfer + './src/',
     dest = assets_folfer + './dest/';
 
@@ -50,14 +50,19 @@ gulp.task('sass', function(){
 });
 
 gulp.task('js',function(){         //タスク名と、その処理内容
-  return gulp.src(src + 'js/*.js')       //対象ファイルをワイルドカードでjsファイル全てに指定
-    .pipe(concat('common.js'))     //concatで結合したファイル名を指定。
+  return gulp.src(src + 'js/default/*js')
+    .pipe(concat('default.js'))     //concatで結合したファイル名を指定。
     .pipe(uglify())                //uglifyで圧縮
     .pipe(gulp.dest(dest + 'js/'));　　　//gulp.dest()で処理されたファイルの出力先を指定。
 });
+gulp.task('js',function(){         //タスク名と、その処理内容
+  return  gulp.src(src + 'js/individual/*js')
+    .pipe(uglify())                //uglifyで圧縮
+    .pipe(gulp.dest(dest + 'js/'));
+});
 gulp.task('default', ['browser-sync'], function() {
   gulp.watch(src + 'sass/**/*scss', ['sass']);
-  gulp.watch(src + 'js/**/*js', ['js']);
+  gulp.watch([src + 'js/default/*js', src + 'js/individual/*js'], ['js']);
   gulp.watch(["./**/*.html", dest + "cssmin/**/*.css", dest + "js/**/*.js" , dest + "css/**/*.css"] ,['bs-reload']);
   // gulp.watch([src + "cssmin/*.css"] ,['bs-reload']);
 });
