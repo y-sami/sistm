@@ -8,7 +8,7 @@ footer { padding-bottom: 2%;
   .btn-entry { width: 100%; margin: 3% 0;
     li { align-self:center; width: 50%;  }
     a { color:#fff; padding: 8% 0; width: 100%; text-align: center; text-decoration: none; display: block; font-size: 20px; font-weight: normal; letter-spacing: 0.1em; position: relative;
-      &:after { font-family:fontAwesome; content:'\f105'; position: absolute; right:2%; font-size: 120%; }
+      &:after { font-family: 'Font Awesome 5 Free';  font-weight: 900; content: "\f105"; font-size: 120%; position: absolute; right:2%; font-size: 120%; }
       &:hover { background-color:#efefef; transition: background-color 0.6s; }
     }
     .new-graduate { background: repeating-linear-gradient(-45deg,#064592,#064592 18px,#003b83 18px,#003b83 24px); }
