@@ -25,7 +25,7 @@
       &:after { display: none; }
     }
   }
-  #catch-alpha { width: 100%; z-index:50; position: absolute; top:50%; transform:translateY(-52%);
+  #catch-alpha { width: 100%; z-index:60; position: absolute; top:50%; transform:translateY(-52%);
       #catch-copy { font-size: 4vw; width: 100%; text-align: center;  font-family: "source-han-sans-japanese",sans-serif; font-weight: normal; font-weight:400; color:#fff; letter-spacing:0.1em; font-style: italic;
       span { display: block; color:#fff; font-size: 1.5vw; font-style: normal; background-color: #ff2b2b; padding: 0.3em 1em; width: 19em; margin: 1em auto 0; border-radius: 5px; }
       }

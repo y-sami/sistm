@@ -511,6 +511,7 @@ body .dis-flex {
 body a {
   text-decoration: none;
   color: #003b83;
+  cursor: pointer;
 }
 
 body a:hover {
@@ -526,6 +527,7 @@ body a.btn {
   position: relative;
   text-align: center;
   padding: 35px 0;
+  color: #003b83;
 }
 
 body a.btn.link:after {
@@ -1232,6 +1234,35 @@ nav#sub-page ol {
   }
 }
 
+.body-shared #main .block-ttl {
+  font-family: "source-han-serif-japanese", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+  text-align: center;
+  color: #003b83;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.body-shared #main .block-ttl::after {
+  width: 80px;
+  height: 3px;
+  display: block;
+  margin: 20px auto 4%;
+  background-color: #003b83;
+  content: '';
+}
+
+@media only screen and (min-width: 768px) {
+  .body-shared #main .block-ttl {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .body-shared #main .block-ttl {
+    font-size: 20px;
+  }
+}
+
 .body-shared #main .note {
   font-size: 13px;
   line-height: 1.6;
@@ -1592,7 +1623,7 @@ ul.list_disc li {
 
 #home #catch-alpha {
   width: 100%;
-  z-index: 50;
+  z-index: 60;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-52%);
@@ -2821,5 +2852,302 @@ ul.list_disc li {
   }
   #recruit-information.faq #main dl.qanda dd {
     margin-top: -10px;
+  }
+}
+
+#workstyle.workstyle-index .cnt-ttl {
+  color: #0081cc;
+}
+
+#workstyle.workstyle-index .cnt-ttl:after {
+  margin-bottom: 0;
+}
+
+#workstyle.workstyle-index .lead p {
+  text-align: center;
+  line-height: 2;
+}
+
+#workstyle.workstyle-index .lead p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+#workstyle.workstyle-index .block {
+  padding: 0 30px;
+  width: 50%;
+}
+
+#workstyle.workstyle-index .block .photo {
+  margin-bottom: 30px;
+}
+
+#workstyle.workstyle-index .block .block-ttl::after {
+  margin-bottom: 0;
+}
+
+#workstyle.workstyle-index .block p {
+  line-height: 1.86;
+}
+
+#workstyle.workstyle-index .block .caption {
+  min-height: 7.5em;
+}
+
+#workstyle.workstyle-index .block .btn-contents {
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+#workstyle.workstyle-index .block .btn.link:after {
+  top: 22%;
+}
+
+#workstyle.workstyle-index .block.block01 .block-ttl {
+  color: #f5a210;
+}
+
+#workstyle.workstyle-index .block.block01 .block-ttl::after {
+  background-color: #f5a210;
+}
+
+#workstyle.workstyle-index .block.block01 a.btn {
+  color: #f5a210;
+  border-color: #f5a210;
+  padding: 15px 0;
+}
+
+#workstyle.workstyle-index .block.block02 .block-ttl {
+  color: #2cb900;
+}
+
+#workstyle.workstyle-index .block.block02 .block-ttl::after {
+  background-color: #2cb900;
+}
+
+#workstyle.workstyle-index .block.block02 span.btn {
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 15px 0;
+  color: #aaa;
+}
+
+#workstyle.workstyle-index .block.block02 span.btn.link:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f105";
+  font-size: 120%;
+  position: absolute;
+  top: 22%;
+  right: 3%;
+}
+
+#workstyle.workstyle-index .block.block02 span.btn.ex-link:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f35d";
+  font-size: 120%;
+  position: absolute;
+  top: 22%;
+  right: 2%;
+}
+
+#workstyle.workstyle-index .block.block02 span.btn:hover {
+  border-color: #aaa;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.workstyle-index .cnt-ttl {
+    line-height: 1.6;
+    font-size: 24px;
+  }
+  #workstyle.workstyle-index .cnt-ttl::after {
+    margin-bottom: 4%;
+  }
+  #workstyle.workstyle-index .lead p {
+    text-align: left;
+  }
+  #workstyle.workstyle-index .inner {
+    padding: 5%;
+  }
+  #workstyle.workstyle-index .dis-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #workstyle.workstyle-index .block {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10%;
+  }
+}
+
+#workstyle.voice-index .cnt-ttl {
+  color: #f5a210;
+}
+
+#workstyle.voice-index .cnt-ttl:after {
+  margin-bottom: 0;
+  background-color: #f5a210;
+}
+
+#workstyle.voice-index .lead p {
+  line-height: 2;
+}
+
+#workstyle.voice-index .lead p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  #workstyle.voice-index .lead {
+    text-align: center;
+  }
+}
+
+#workstyle.voice-index .dis-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#workstyle.voice-index .photo {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#workstyle.voice-index .photo:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  content: "";
+}
+
+#workstyle.voice-index .photo.hover:after {
+  border: 10px solid #f5a210;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#workstyle.voice-index .cnt {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 2;
+  padding: 15px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  #workstyle.voice-index .cnt {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.voice-index .cnt {
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+#workstyle.voice-index h3 {
+  font-size: 22px;
+  line-height: 1.6;
+  min-height: 5em;
+  margin-bottom: 0.7em;
+}
+
+#workstyle.voice-index dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#workstyle.voice-index dl dt {
+  width: 70%;
+  padding-top: 5px;
+}
+
+#workstyle.voice-index dl dd {
+  width: 30%;
+  background-color: #f5a210;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #workstyle.voice-index .box {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.voice-index .box {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    margin-bottom: 25%;
+  }
+  #workstyle.voice-index h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.voice-index .cnt-ttl {
+    line-height: 1.6;
+    font-size: 24px;
+  }
+  #workstyle.voice-index .cnt-ttl::after {
+    margin-bottom: 4%;
+  }
+  #workstyle.voice-index .lead p {
+    text-align: left;
+  }
+  #workstyle.voice-index .inner {
+    padding: 5%;
+  }
+  #workstyle.voice-index .dis-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #workstyle.voice-index .block {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10%;
   }
 }
