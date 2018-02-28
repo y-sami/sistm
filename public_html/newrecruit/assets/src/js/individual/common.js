@@ -16,5 +16,5 @@ $(function(){
           ds = $(this).scrollTop();
           menuFixed(ds);
         }, 80 );
-      });
+    });
 });

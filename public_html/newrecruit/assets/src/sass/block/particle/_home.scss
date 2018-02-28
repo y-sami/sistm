@@ -17,23 +17,25 @@
    }
 
   #catch-visual { position: relative; z-index:1;
-    &:after { content:''; display: block; width: 44px; height:70px; background:url(../../../images/top/icon_scroll.png) no-repeat center top; background-size: cover; position: absolute; bottom:3%; left:50.5%; z-index:3;
-      @media #{$middle} { width: 30px; height:48px; }
-    }
     @media #{$small} { padding-top: 50px;
       .bx-wrapper  { border: none; }
-      &:after { display: none; }
+    }
+  }
+  .alpha-wrapper { position: relative; }
+  .alpha { z-index: 50; width: 100%; height:100%; display: block; position: absolute; top:0; left:0;
+      &:after { content:''; display: block; width: 44px; height:70px; background:url(../../../images/top/icon_scroll.png) no-repeat center top; background-size: cover; position: absolute; bottom:3%; left:50.5%; z-index:10;
+      @media #{$middle} { width: 30px; height:48px; }
+      @media #{$small} { display: none; }
     }
   }
   #catch-alpha { width: 100%; z-index:60; position: absolute; top:50%; transform:translateY(-52%);
       #catch-copy { font-size: 4vw; width: 100%; text-align: center;  font-family: "source-han-sans-japanese",sans-serif; font-weight: normal; font-weight:400; color:#fff; letter-spacing:0.1em; font-style: italic;
       span { display: block; color:#fff; font-size: 1.5vw; font-style: normal; background-color: #ff2b2b; padding: 0.3em 1em; width: 19em; margin: 1em auto 0; border-radius: 5px; }
       }
-      @media #{$small} { padding-top: 50px; height:250px;
+      @media #{$small} { padding-top: 50px;
         #catch-copy { font-size: 6.5vw; line-height: 1.5;
           span { font-size: 2.2vw; width: 19em; }
-        }
-        &:after { display: none; }
+      }
     }
   }
 
@@ -103,7 +105,8 @@
       .en-ttl { position: absolute; top:1%; left:-1%; }
       .lead { text-align: center; }
       .inner { max-width: 94%; margin: 0 auto; padding-top: 3%; flex-wrap:wrap; justify-content:center;  }
-      .box { width: calc(25% - 20px); margin: 0 10px 20px; padding:0 0 2em 0;
+      .box { width: calc(25% - 20px); margin: 0 10px 20px;
+        a { padding:0 0 2em 0; display: block; }
         h3 { padding: 0.8em 0.5em 0.8em 1em; font-size: 16.5px; letter-spacing:-0.05em }
         p { padding: 1em 0.5em 0 1.5em; font-size: 15px; line-height:1.5;  }
       }

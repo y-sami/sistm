@@ -21,6 +21,7 @@
 
 		@media #{$small} {
 			.cnt-catch { height:20vh; width: 100%;
+				@media #{$mobile-side} { height:30vh; }
 				h2 { font-size: 18px; bottom:18%; width: 6em; }
 			}
 			p { padding: 0 5%; text-align: left; letter-spacing:0; line-height: 2;
@@ -48,7 +49,7 @@
   	ul li { margin-bottom: 20px;
 			a { box-sizing: border-box; font-size: 20px;
 				&.link { padding: 40px 0; }
-				&.ex-link { padding: 20px 0; }
+				&.ex-link.image { padding: 20px 0; }
 				@media #{$small} {
 					&.link { padding: 20px 0; }
 					&.ex-link { padding: 10px 0;
@@ -60,6 +61,7 @@
   	}
 	}
 
+	&.career-outline #catch-visual .page-ttl-en { font-size: 11.5vw; }
 
 	&.new-graduate-outline #main,&.career-outline #main {
 		.cnt-ttl:after { margin-bottom: 1%; }
@@ -73,7 +75,7 @@
   		&:not(:last-child) { margin-bottom: 15%; }
   	}
 
-  	.page-unker { text-align: center; margin-bottom: 4%;
+  	.page-unker { text-align: center; margin-bottom: 4%; margin-top: 3%;
 			li { display: inline-block; color:$accent-color-02; font-size: 20px; vertical-align: middle;
 				@media #{$small} { font-size: 16px; margin-bottom: 10px; }
 				&:not(:last-child) { margin-right: 20px; }
@@ -93,10 +95,11 @@
   		a { color:$accent-color-02; text-decoration: underline; }
   		.th-style { width: 20%; border-top: 3px solid $accent-color-01; }
   		.td-style { width: 80%; border-top: 3px solid #b3b3b3; }
+  		/*
   		@media #{$over-middle} {
   			.th-style { width: 20%; border: none; }
   			.td-style { width: 80%; border: none; }
-  		}
+  		}*/
   		@media #{$small} { display: flex; flex-wrap:wrap; width: 100%;
   			tr { display: flex; flex-wrap:wrap; width: 100%; }
   			.th-style { width: 100%; flex:1; }
@@ -114,6 +117,7 @@
   		span.note { margin-top: 0.8em; }
   	}
   	.btn-entry {
+  		.caption { display: block; padding-top: 1em; font-size: 14px; text-align: center; }
   		@media #{$over-middle} { width: 500px; margin: 6% auto; }
   		@media #{$small} { width: 90%; margin: 6% auto; }
   	}
@@ -137,7 +141,7 @@
 			dd { margin-top: -20px;
 				h5 { font-weight: bold; margin-top: 20px; color:$accent-color-02; }
 				.qa-ttl { padding-left: 2px; }
-				strong { font-weight: bold; color:$accent-color-02; }
+				strong { font-weight: normal; color:$accent-color-02; }
 			}
 			@media #{$small} {
 				dt { margin-bottom: 0; }
