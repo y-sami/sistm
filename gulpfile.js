@@ -10,13 +10,7 @@ var gulp = require('gulp'),
   csscomb = require('gulp-csscomb'),
   cleancss = require('gulp-clean-css'),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
-  changed  = require('gulp-changed');
-  imagemin = require('gulp-imagemin');
-  imageminJpg = require('imagemin-jpeg-recompress');
-  imageminPng = require('imagemin-pngquant');
-  imageminGif = require('imagemin-gifsicle');
-  svgmin = require('gulp-svgmin')
+  uglify = require('gulp-uglify')
 ;
 
 // 各種作業ファイルを指定するよ
@@ -56,13 +50,13 @@ gulp.task('sass', function(){
 });
 
 // JS 圧縮
-gulp.task('js',function(){         //タスク名と、その処理内容
+gulp.task('js-default',function(){         //タスク名と、その処理内容
   return gulp.src(src + 'js/default/*js')
     .pipe(concat('default.js'))     //concatで結合したファイル名を指定。
     .pipe(uglify())                //uglifyで圧縮
     .pipe(gulp.dest(dest + 'js/'));　　　//gulp.dest()で処理されたファイルの出力先を指定。
 });
-gulp.task('js',function(){         //タスク名と、その処理内容
+gulp.task('js-indiv',function(){         //タスク名と、その処理内容
   return  gulp.src(src + 'js/individual/*js')
     .pipe(uglify())                //uglifyで圧縮
     .pipe(gulp.dest(dest + 'js/'));
@@ -70,7 +64,7 @@ gulp.task('js',function(){         //タスク名と、その処理内容
 
 gulp.task('default', ['browser-sync'], function() {
   gulp.watch(src + 'sass/**/*scss', ['sass']);
-  gulp.watch([src + 'js/default/*js', src + 'js/individual/*js'], ['js']);
+  gulp.watch([src + 'js/default/*js', src + 'js/individual/*js'], ['js-default','js-indiv']);
   gulp.watch(["./**/*.html", dest + "cssmin/**/*.css", dest + "js/**/*.js" , dest + "css/**/*.css"] ,['bs-reload']);
   // gulp.watch([src + "cssmin/*.css"] ,['bs-reload']);
 });

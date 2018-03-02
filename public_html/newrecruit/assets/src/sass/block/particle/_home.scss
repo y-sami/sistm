@@ -41,7 +41,7 @@
   }
 
   #introduction {  background:url(../../../images/top/bg_introduction.jpg) no-repeat center 50%; background-size: cover; line-height: 2;
-    h2.ttl { line-height: 1.4; font-weight: normal;  font-family: "source-han-sans-japanese",sans-serif; font-weight:200; }
+    h2.ttl { line-height: 1.4; font-weight: normal;  font-family: "source-han-sans-japanese",sans-serif; font-weight:200; padding: 3% 0; }
     @media #{$over-middle} { color:#fff; padding: 10% 0 7%;
       .inner { max-width: 60%; margin: 0 auto;  }
       h2.ttl { font-size: 3.5vw;  padding-left: 0.5em; }
