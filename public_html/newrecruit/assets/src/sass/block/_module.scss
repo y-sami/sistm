@@ -242,7 +242,7 @@ nav#sub-page ol { display: flex; width: 100%; box-sizing: border-box;
   }
 
   @media #{$small} {
-    .catch-image { height:30vh;
+    .catch-image { height:10vh; min-height:200px;
       @media #{$mobile-side:} { min-height:250px; }
       .page-ttl { font-size: 22px;
         span { font-size: 14px; padding-bottom: 0; }

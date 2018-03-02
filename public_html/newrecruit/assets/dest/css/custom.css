@@ -1194,7 +1194,8 @@ nav#sub-page ol {
 
 @media only screen and (max-width: 767px) {
   .body-shared #catch-visual .catch-image {
-    height: 30vh;
+    height: 10vh;
+    min-height: 200px;
   }
 }
 
