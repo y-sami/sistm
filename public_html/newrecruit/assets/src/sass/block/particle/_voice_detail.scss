@@ -7,7 +7,9 @@
 		#voice-catch-visual { position: relative; width: 100%;
 	  .catch-image { overflow: hidden; width: 100%; height:60vh; position: relative; z-index: 1;
 	  	@media #{$tablet} { height:40vh; }
-	  	@media #{$pc-small-width} { height:45vh; }
+	  	@media #{$pc-small-width} { height:45vh; min-height:450px; }
+	  	@media #{$xlarge} { min-height:600px; }
+
 	    img { position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%); max-width: 100%;  height: auto; z-index:1; }
 	    h1 { position: relative; box-sizing: border-box; padding:40px 35px 20px; background-color:rgba(255,255,255,0.85); color:$accent-color-02; z-index:2; box-sizing: border-box;
 	    	//&.left { top:50%; left:50%; transform: translate(-104%, -50%);  }
@@ -32,10 +34,10 @@
 					}
 	    	}
 		  }
-			@media #{$small} { margin-bottom: 5%;
-				.catch-image { height:60vh;
-					img { top:0; transform: translate(-50%, 0); max-width: 200%; }
-					h1.left,h1.right { position: absolute; padding: 3%; width: 93%; left:10px; transform: translate(0, 0);
+			@media #{$small} {
+				.catch-image { overflow: auto; height:auto; margin-bottom: 5%;
+					img { left:auto; top:auto; position: relative; top:auto; transform: translate(0, 0); max-width: 100%; }
+					h1.left,h1.right { padding:3%; width:93%; transform: translate(0, 0); margin: -5vh auto 0;
 						strong { font-size: 20px; }
 						dl { font-size: 16px;
 							dt { width: 75%; }
@@ -64,8 +66,8 @@
 					.cnt { padding-left: 5%; flex:100%; }
 
 					@media #{$small} {
-						.cnt { padding:5% 5% 0; }
-						.photo { width: 100%; padding: 5% 20% 0; box-sizing: border-box; }
+						.cnt { padding:5% 5% 0; width: 100%; }
+						.photo { display: none; }
 					}
 				}
 				&.left-cnt { flex-direction:row-reverse;
@@ -88,6 +90,7 @@
 					.cnt,.photo { width: 100%; box-sizing: border-box; }
 				}
 			}
+
 			// Ð´Õæ‚€„e
 			&.voice01 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice01/photo02.jpg') no-repeat right top; background-size: 65%; }
 			&.voice02 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice02/photo02.jpg') no-repeat right top; background-size: 65%; }
@@ -108,6 +111,7 @@
 		// message
 		#message-catch { position: relative; width: 100%;
 	  .catch-image { overflow: hidden; width: 100%; height:40vh; position: relative; z-index: 1;
+	  	@media #{$over-middle} { min-height:400px; }
 	    img { position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); max-width: 100%;  height: auto; z-index:1; }
 	    h2 { position: relative; box-sizing: border-box;  color:#fff; z-index:2; padding-top:3vh;
 	    	.message { font-size: 20px; background-color:$accent-color-10; display: inline-block; margin-bottom: 15px; padding:0.5em 1em;  }
@@ -120,9 +124,9 @@
 					@media #{$qxlarge} { font-size: 35px; }
 					}
 	    	}
-		  @media #{$small} { height:auto;
-				img { top:0; transform: translate(-50%, 0); max-width:150%;  }
-				h2 { width: 100%; padding: 25vh 3% 0 2%;
+		  @media #{$small} { overflow: auto; height:auto;
+				img { position: relative; left:auto; top:auto; transform: translate(0, 0); max-width: 100%;  }
+				h2 { width: 100%; padding: 3% 3% 0 3%;
 					.message { padding: 0.1em 0.4em; margin-bottom: 5px; font-size: 14px; }
 					strong { font-size: 4.9vw; margin-bottom: 5px;
 						span { padding: 0.1em 0.4em; margin-bottom: 5px; }
@@ -130,7 +134,10 @@
 				}
 		  }
 		}
-	}
+		}
+		#main.voice07 #message-catch h2 {
+			@media #{$over-middle} { width: 750px; }
+		}
 		@media #{$small} {
 			#main .block03 .inner.cnt { padding: 0 5%; }
 		}
@@ -198,6 +205,27 @@
 				@media #{$over-middle} { width: 500px; margin: 3% auto 5%; }
 				@media #{$small} { width: 85%; margin: 0 auto 5%; padding-top: 10%; }
 			}
+		}
+
+		@media #{$tablet} {
+			#main {
+				.inner { width:initial; }
+				.dis-flex.right-cnt { padding: 0 5%; width: 100%; box-sizing: border-box;
+					.photo { width: 60%; }
+				}
+				.dis-flex.left-cnt { width: 100%;
+				.photo { width: 40%; padding-top: 200px;}
+				.cnt { width: 60%; padding-left: 5% }
+				}
+				.message {
+					.message-ttl { margin-left: 3%; }
+					.inner.cnt { padding: 3% 5% 10%; box-sizing: border-box; width: 100%; }
+				}
+				#day-schedule .inner { padding: 0 5%; box-sizing: border-box; width: 100%; }
+			}
+		}
+		@media #{$pc-small-width} {
+			#main .inner { padding-left: 3%; padding-right: 3%; box-sizing: border-box;  width: 100%; }
 		}
 	}
 }

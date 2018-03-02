@@ -10,7 +10,13 @@ var gulp = require('gulp'),
   csscomb = require('gulp-csscomb'),
   cleancss = require('gulp-clean-css'),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify')
+  uglify = require('gulp-uglify'),
+  changed  = require('gulp-changed');
+  imagemin = require('gulp-imagemin');
+  imageminJpg = require('imagemin-jpeg-recompress');
+  imageminPng = require('imagemin-pngquant');
+  imageminGif = require('imagemin-gifsicle');
+  svgmin = require('gulp-svgmin')
 ;
 
 // 各種作業ファイルを指定するよ
@@ -32,7 +38,7 @@ gulp.task('bs-reload', function() {
   browserSync.reload();
 });
 
-
+// SCSS
 gulp.task('sass', function(){
  gulp.src(src + 'sass/**/*scss')
     .pipe(plumber())
@@ -49,6 +55,7 @@ gulp.task('sass', function(){
     ;
 });
 
+// JS 圧縮
 gulp.task('js',function(){         //タスク名と、その処理内容
   return gulp.src(src + 'js/default/*js')
     .pipe(concat('default.js'))     //concatで結合したファイル名を指定。
@@ -60,11 +67,10 @@ gulp.task('js',function(){         //タスク名と、その処理内容
     .pipe(uglify())                //uglifyで圧縮
     .pipe(gulp.dest(dest + 'js/'));
 });
+
 gulp.task('default', ['browser-sync'], function() {
   gulp.watch(src + 'sass/**/*scss', ['sass']);
   gulp.watch([src + 'js/default/*js', src + 'js/individual/*js'], ['js']);
   gulp.watch(["./**/*.html", dest + "cssmin/**/*.css", dest + "js/**/*.js" , dest + "css/**/*.css"] ,['bs-reload']);
   // gulp.watch([src + "cssmin/*.css"] ,['bs-reload']);
 });
-
-

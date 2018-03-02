@@ -3,6 +3,7 @@
 // home
 // ===================================================================
 #home {
+  h2.ja-ttl { padding: 3% 0; }
    @media #{$over-middle} {
     .ja-ttl { font-size: 3.3vw;  font-family: "source-han-serif-japanese"; font-weight: normal; }
     .en-ttl { font-size: 18vw;  font-family: "athelas"; font-weight: normal; }

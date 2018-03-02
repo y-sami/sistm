@@ -10,6 +10,8 @@
 			h2 { color:#fff; background-color:$accent-color-02; font-family:$font-min; display: inline-block; font-weight: normal; position: absolute; z-index:2; bottom:18%; left: 50%; transform: translate(-50%, 0%); line-height: 1; padding: 0.5em 2em;
 				@media #{$over-middle} { font-size: 35px; }
 			}
+			@media #{$tablet} { height:20vh; min-height:350px; }
+			@media #{$pc-small-width} { height:30vh; min-height:420px; }
 		}
 		.border { width: 80px; height:5px; display: block; margin: 0 auto 4%; background-color:$accent-color-02; }
 		p { font-family:$font_min; letter-spacing:0.1em;
@@ -21,7 +23,8 @@
 
 		@media #{$small} {
 			.cnt-catch { height:20vh; width: 100%;
-				@media #{$mobile-side} { height:30vh; }
+				@media #{$mobile-side} { height:40vh; min-height:260px; }
+
 				h2 { font-size: 18px; bottom:18%; width: 6em; }
 			}
 			p { padding: 0 5%; text-align: left; letter-spacing:0; line-height: 2;
