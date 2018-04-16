@@ -117,12 +117,24 @@
 				@media #{$small} { border-bottom: 1px solid #dddddd; padding-bottom: 0.3em; }
   		}
   		.area,.educational-background { width: 7em; display: inline-block; margin-right: 1em; }
+  		.note li { margin-bottom: 0.3em;}
   		span.note { margin-top: 0.8em; }
   	}
   	.btn-entry {
   		.caption { display: block; padding-top: 1em; font-size: 14px; text-align: center; }
-  		@media #{$over-middle} { width: 500px; margin: 6% auto; }
-  		@media #{$small} { width: 90%; margin: 6% auto; }
+  		@media #{$over-middle} { width: 500px; margin:0 auto; padding-top: 3%; margin-bottom: 2%; }
+  		@media #{$small} { width: 90%; margin: 6% auto 2%; }
+  	}
+	}
+
+	&.entry #main,&.career-outline #main {
+		.entry-info { background-color: #fafafa; padding: 2%; line-height: 1.86; font-size: 90%;
+  		.clipboard { border: 1px solid #eaeaea; margin: 2% 0; padding: 2%; }
+			.list-disc { margin-left: 1.5em;
+				li { list-style-type: disc; margin-bottom: 0;
+					span { font-size: 90%; display: block; }
+				}
+			}
   	}
 	}
 

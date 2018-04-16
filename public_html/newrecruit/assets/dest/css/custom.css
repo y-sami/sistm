@@ -1736,7 +1736,7 @@ ul.list_disc li {
   display: block;
   width: 44px;
   height: 70px;
-  background: url(../../../images/top/icon_scroll.png) no-repeat center top;
+  background: url("../../../images/top/icon_scroll.png") no-repeat center top;
   background-size: cover;
   position: absolute;
   bottom: 3%;
@@ -1805,7 +1805,7 @@ ul.list_disc li {
 }
 
 #home #introduction {
-  background: url(../../../images/top/bg_introduction.jpg) no-repeat center 50%;
+  background: url("../../../images/top/bg_introduction.jpg") no-repeat center 50%;
   background-size: cover;
   line-height: 2;
 }
@@ -1849,7 +1849,7 @@ ul.list_disc li {
   #home #introduction {
     background-attachment: fixed;
     color: #111;
-    background: url(../../../images/top/bg_introduction_smp.jpg) no-repeat top right;
+    background: url("../../../images/top/bg_introduction_smp.jpg") no-repeat top right;
   }
   #home #introduction .inner {
     padding: 5%;
@@ -1871,7 +1871,7 @@ ul.list_disc li {
 
 @media only screen and (min-width: 440px) and (max-width: 767px) {
   #home #introduction {
-    background: url(../../../images/top/bg_introduction.jpg) no-repeat center 50%;
+    background: url("../../../images/top/bg_introduction.jpg") no-repeat center 50%;
     background-attachment: scroll;
   }
   #home #introduction .md-none {
@@ -1975,7 +1975,7 @@ ul.list_disc li {
 }
 
 #home #voice {
-  background: url(../../../images/top/bg_voice.jpg) no-repeat top center;
+  background: url("../../../images/top/bg_voice.jpg") no-repeat top center;
   background-size: cover;
   position: relative;
 }
@@ -2003,7 +2003,7 @@ ul.list_disc li {
 }
 
 #home #voice .box {
-  background: url(../../../images/top/icon_arrow_voice.png) no-repeat;
+  background: url("../../../images/top/icon_arrow_voice.png") no-repeat;
   background-position: bottom -20px right 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2105,7 +2105,7 @@ ul.list_disc li {
 }
 
 #home #benefits {
-  background: url(../../../images/top/bg_benefits.jpg) no-repeat top center;
+  background: url("../../../images/top/bg_benefits.jpg") no-repeat top center;
   background-size: cover;
   position: relative;
 }
@@ -2125,7 +2125,7 @@ ul.list_disc li {
 }
 
 #home #benefits .block .box {
-  background: #56c377 url(../../../images/top/icon_arrow.png) no-repeat;
+  background: #56c377 url("../../../images/top/icon_arrow.png") no-repeat;
   background-position: bottom -35px right 15px;
   position: relative;
   z-index: 1;
@@ -2157,15 +2157,15 @@ ul.list_disc li {
     padding: 9% 0 7%;
   }
   #home #benefits .inner {
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #home #benefits .block {
-    width: 30%;
-    float: left;
-  }
-  #home #benefits .block:not(:last-child) {
-    margin-right: 5%;
+    width: 33%;
+    margin: 0 2.5%;
   }
   #home #benefits .block .circle {
     position: relative;
@@ -2254,7 +2254,7 @@ ul.list_disc li {
 }
 
 #home #company .company-outline {
-  background: url(../../../images/top/bg_company.jpg) no-repeat -40% center;
+  background: url("../../../images/top/bg_company.jpg") no-repeat -40% center;
   background-size: cover;
   position: relative;
 }
@@ -2293,17 +2293,17 @@ ul.list_disc li {
 }
 
 #home #company .btn-cntlink .icon-message {
-  background: url(../../../images/top/icon_message.png) no-repeat left top;
+  background: url("../../../images/top/icon_message.png") no-repeat left top;
   background-size: cover;
 }
 
 #home #company .btn-cntlink .icon-hope {
-  background: url(../../../images/top/icon_hope.png) no-repeat left top;
+  background: url("../../../images/top/icon_hope.png") no-repeat left top;
   background-size: cover;
 }
 
 #home #company .btn-cntlink .icon-faq {
-  background: url(../../../images/top/icon_faq.png) no-repeat left top;
+  background: url("../../../images/top/icon_faq.png") no-repeat left top;
   background-size: cover;
 }
 
@@ -2393,7 +2393,7 @@ ul.list_disc li {
 @media only screen and (max-width: 767px) {
   #home #company .company-outline {
     padding: 15% 0 3%;
-    background: url(../../../images/top/bg_company_xs.jpg) no-repeat;
+    background: url("../../../images/top/bg_company_xs.jpg") no-repeat;
     background-position: 60% 0;
     background-size: cover;
   }
@@ -2907,6 +2907,10 @@ ul.list_disc li {
   margin-right: 1em;
 }
 
+#recruit-information.new-graduate-outline #main .sheet .note li, #recruit-information.career-outline #main .sheet .note li {
+  margin-bottom: 0.3em;
+}
+
 #recruit-information.new-graduate-outline #main .sheet span.note, #recruit-information.career-outline #main .sheet span.note {
   margin-top: 0.8em;
 }
@@ -2921,15 +2925,44 @@ ul.list_disc li {
 @media only screen and (min-width: 768px) {
   #recruit-information.new-graduate-outline #main .btn-entry, #recruit-information.career-outline #main .btn-entry {
     width: 500px;
-    margin: 6% auto;
+    margin: 0 auto;
+    padding-top: 3%;
+    margin-bottom: 2%;
   }
 }
 
 @media only screen and (max-width: 767px) {
   #recruit-information.new-graduate-outline #main .btn-entry, #recruit-information.career-outline #main .btn-entry {
     width: 90%;
-    margin: 6% auto;
+    margin: 6% auto 2%;
   }
+}
+
+#recruit-information.entry #main .entry-info, #recruit-information.career-outline #main .entry-info {
+  background-color: #fafafa;
+  padding: 2%;
+  line-height: 1.86;
+  font-size: 90%;
+}
+
+#recruit-information.entry #main .entry-info .clipboard, #recruit-information.career-outline #main .entry-info .clipboard {
+  border: 1px solid #eaeaea;
+  margin: 2% 0;
+  padding: 2%;
+}
+
+#recruit-information.entry #main .entry-info .list-disc, #recruit-information.career-outline #main .entry-info .list-disc {
+  margin-left: 1.5em;
+}
+
+#recruit-information.entry #main .entry-info .list-disc li, #recruit-information.career-outline #main .entry-info .list-disc li {
+  list-style-type: disc;
+  margin-bottom: 0;
+}
+
+#recruit-information.entry #main .entry-info .list-disc li span, #recruit-information.career-outline #main .entry-info .list-disc li span {
+  font-size: 90%;
+  display: block;
 }
 
 #recruit-information.faq #main .inner {
@@ -3023,6 +3056,7 @@ ul.list_disc li {
 
 #workstyle.workstyle-index .cnt-ttl {
   color: #0081cc;
+  font-weight: 300;
 }
 
 #workstyle.workstyle-index .lead p {
@@ -3082,17 +3116,17 @@ ul.list_disc li {
   background-color: #2cb900;
 }
 
-#workstyle.workstyle-index .block.block02 span.btn {
+#workstyle.workstyle-index .block.block02 a.btn {
   border-radius: 3px;
-  border: 1px solid #aaa;
+  border: 1px solid #2cb900;
   display: block;
   position: relative;
   text-align: center;
   padding: 15px 0;
-  color: #aaa;
+  color: #2cb900;
 }
 
-#workstyle.workstyle-index .block.block02 span.btn.link:after {
+#workstyle.workstyle-index .block.block02 a.btn.link:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   content: "\f105";
@@ -3102,17 +3136,7 @@ ul.list_disc li {
   right: 3%;
 }
 
-#workstyle.workstyle-index .block.block02 span.btn.ex-link:after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: "\f35d";
-  font-size: 120%;
-  position: absolute;
-  top: 22%;
-  right: 2%;
-}
-
-#workstyle.workstyle-index .block.block02 span.btn:hover {
+#workstyle.workstyle-index .block.block02 a.btn:hover {
   border-color: #aaa;
   -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s;
@@ -3382,6 +3406,335 @@ ul.list_disc li {
     width: 100%;
     padding: 0;
     margin-bottom: 10%;
+  }
+}
+
+#workstyle.benefits .cnt-ttl {
+  color: #3ba312;
+  font-weight: 300;
+}
+
+#workstyle.benefits .cnt-ttl::after {
+  background-color: #3ba312;
+}
+
+#workstyle.benefits .lead {
+  margin-bottom: 3em;
+  line-height: 1.86;
+}
+
+@media only screen and (min-width: 768px) {
+  #workstyle.benefits .lead {
+    text-align: center;
+  }
+}
+
+#workstyle.benefits .lead p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+#workstyle.benefits .page-unker {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 2%;
+}
+
+#workstyle.benefits .page-unker li {
+  display: inline-block;
+  color: #3ba312;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.benefits .page-unker li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+#workstyle.benefits .page-unker li:not(:last-child) {
+  margin-right: 20px;
+}
+
+#workstyle.benefits .page-unker li:before {
+  content: "[";
+  font-size: 160%;
+  padding-right: 0.9em;
+}
+
+#workstyle.benefits .page-unker li:after {
+  content: "]";
+  font-size: 160%;
+  padding-left: 0.55em;
+}
+
+#workstyle.benefits .page-unker li a {
+  color: #3ba312;
+}
+
+#workstyle.benefits .page-unker li a:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  content: "\f107";
+  font-size: 110%;
+  margin-left: 0.5em;
+}
+
+#workstyle.benefits h4 {
+  margin: 0 0 12px 1.6em;
+  color: #3ba312;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.benefits h4 {
+    padding-left: 0.6em;
+    margin-left: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid #3ba312;
+  }
+}
+
+#workstyle.benefits .cnt-wrap {
+  padding-top: 10%;
+}
+
+#workstyle.benefits .cnt-wrap > .cnt-block:not(:first-child) {
+  margin-top: 5%;
+}
+
+#workstyle.benefits .sheet {
+  width: 100%;
+  table-layout: fixed;
+  /*
+  		@media only screen and (min-width:768px) {
+  			.th-style { width: 20%; border: none; }
+  			.td-style { width: 80%; border: none; }
+  		}*/
+}
+
+#workstyle.benefits .sheet:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+#workstyle.benefits .sheet a {
+  color: #3ba312;
+  text-decoration: underline;
+}
+
+#workstyle.benefits .sheet .th-style {
+  width: 30%;
+  border-top: 3px solid #3ba312;
+}
+
+#workstyle.benefits .sheet .td-style {
+  width: 70%;
+  border-top: 3px solid #b3b3b3;
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.benefits .sheet .th-style, #workstyle.benefits .sheet .td-style {
+    display: block;
+    width: 100%;
+  }
+}
+
+#workstyle.benefits .sheet th, #workstyle.benefits .sheet td {
+  padding: 1em 1em 1em 2em;
+  text-align: left;
+  line-height: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  #workstyle.benefits .sheet th, #workstyle.benefits .sheet td {
+    border-bottom: 1px solid #dddddd;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.benefits .sheet th, #workstyle.benefits .sheet td {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    padding: 0.3em 1em 0.7em 1.2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+#workstyle.benefits .sheet th {
+  font-weight: bold;
+}
+
+#workstyle.benefits .sheet th span {
+  font-weight: normal;
+  display: block;
+  font-size: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  #workstyle.benefits .sheet th {
+    border-bottom: 1px solid #dddddd;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.benefits .sheet th {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 0.3em;
+  }
+}
+
+#workstyle.benefits .sheet .area, #workstyle.benefits .sheet .educational-background {
+  width: 7em;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+#workstyle.benefits .sheet .note li {
+  margin-bottom: 0.3em;
+}
+
+#workstyle.benefits .sheet span.note {
+  margin-top: 0.8em;
+}
+
+#workstyle.benefits .holiday-sheet {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  margin: 20px 0;
+}
+
+#workstyle.benefits .holiday-sheet th, #workstyle.benefits .holiday-sheet td {
+  padding: 5px 8px;
+  font-size: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #dddddd;
+}
+
+#workstyle.benefits .holiday-sheet .row01 {
+  width: 8em;
+}
+
+#workstyle.benefits .holiday-sheet .row02 {
+  width: 8em;
+}
+
+#workstyle.benefits .holiday-sheet .row-int {
+  width: 16.66667%;
+  text-align: right;
+}
+
+#workstyle.benefits .holiday-sheet .align-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #workstyle.benefits .holiday-sheet.xs {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.benefits .holiday-sheet.md {
+    display: none;
+  }
+}
+
+#workstyle.benefits .cnt-catch {
+  position: relative;
+  overflow: hidden;
+  height: 30vh;
+  margin-top: 3%;
+}
+
+#workstyle.benefits .cnt-catch img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #workstyle.benefits .cnt-catch {
+    height: 20vh;
+    min-height: 350px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+  #workstyle.benefits .cnt-catch {
+    height: 30vh;
+    min-height: 420px;
+  }
+}
+
+#workstyle.benefits .entry-info {
+  background-color: #fafafa;
+  padding: 2%;
+  line-height: 1.86;
+  font-size: 90%;
+}
+
+#workstyle.benefits .entry-info .clipboard {
+  border: 1px solid #eaeaea;
+  margin: 2% 0;
+  padding: 2%;
+}
+
+#workstyle.benefits .entry-info .list-disc {
+  margin-left: 1.5em;
+}
+
+#workstyle.benefits .entry-info .list-disc li {
+  list-style-type: disc;
+  margin-bottom: 0;
+}
+
+#workstyle.benefits .entry-info .list-disc li span {
+  font-size: 90%;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle .cnt-ttl {
+    line-height: 1.6;
+    font-size: 24px;
+  }
+  #workstyle .cnt-ttl::after {
+    margin-bottom: 4%;
+  }
+  #workstyle .lead p {
+    text-align: left;
+  }
+  #workstyle #main .inner {
+    padding: 5%;
+  }
+  #workstyle .dis-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #workstyle .block {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10%;
+  }
+  #workstyle .sheet .holiday-sheet th, #workstyle .sheet .holiday-sheet td {
+    display: table-cell;
+    width: initial;
+  }
+  #workstyle .sheet .holiday-sheet .row-int {
+    text-align: right;
   }
 }
 
@@ -3685,49 +4038,49 @@ ul.list_disc li {
 
 #workstyle.voice_detail #main.voice01 .block02 {
   padding-top: 50px;
-  background: url("/newrecruit/workstyle/voice/images/voice01/photo02.jpg") no-repeat right top;
+  background: url("../../../workstyle/voice/images/voice01/photo02.jpg") no-repeat right top;
   background-size: 65%;
 }
 
 #workstyle.voice_detail #main.voice02 .block02 {
   padding-top: 50px;
-  background: url("/newrecruit/workstyle/voice/images/voice02/photo02.jpg") no-repeat right top;
+  background: url("../../../workstyle/voice/images/voice02/photo02.jpg") no-repeat right top;
   background-size: 65%;
 }
 
 #workstyle.voice_detail #main.voice03 .block02 {
   padding-top: 50px;
-  background: url("/newrecruit/workstyle/voice/images/voice03/photo02.jpg") no-repeat right top;
+  background: url("../../../workstyle/voice/images/voice03/photo02.jpg") no-repeat right top;
   background-size: 65%;
 }
 
 #workstyle.voice_detail #main.voice04 .block02 {
   padding-top: 50px;
-  background: url("/newrecruit/workstyle/voice/images/voice04/photo02.jpg") no-repeat right top;
+  background: url("../../../workstyle/voice/images/voice04/photo02.jpg") no-repeat right top;
   background-size: 65%;
 }
 
 #workstyle.voice_detail #main.voice05 .block02 {
   padding-top: 50px;
-  background: url("/newrecruit/workstyle/voice/images/voice05/photo02.jpg") no-repeat right top;
+  background: url("../../../workstyle/voice/images/voice05/photo02.jpg") no-repeat right top;
   background-size: 65%;
 }
 
 #workstyle.voice_detail #main.voice06 .block02 {
   padding-top: 50px;
-  background: url("/newrecruit/workstyle/voice/images/voice06/photo02.jpg") no-repeat right top;
+  background: url("../../../workstyle/voice/images/voice06/photo02.jpg") no-repeat right top;
   background-size: 65%;
 }
 
 #workstyle.voice_detail #main.voice07 .block02 {
   padding-top: 50px;
-  background: url("/newrecruit/workstyle/voice/images/voice07/photo02.jpg") no-repeat right top;
+  background: url("../../../workstyle/voice/images/voice07/photo02.jpg") no-repeat right top;
   background-size: 65%;
 }
 
 #workstyle.voice_detail #main.voice08 .block02 {
   padding-top: 50px;
-  background: url("/newrecruit/workstyle/voice/images/voice08/photo02.jpg") no-repeat right top;
+  background: url("../../../workstyle/voice/images/voice08/photo02.jpg") no-repeat right top;
   background-size: 65%;
 }
 

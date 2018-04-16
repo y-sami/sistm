@@ -24,7 +24,7 @@
   }
   .alpha-wrapper { position: relative; }
   .alpha { z-index: 50; width: 100%; height:100%; display: block; position: absolute; top:0; left:0;
-      &:after { content:''; display: block; width: 44px; height:70px; background:url(../../../images/top/icon_scroll.png) no-repeat center top; background-size: cover; position: absolute; bottom:3%; left:50.5%; z-index:10;
+      &:after { content:''; display: block; width: 44px; height:70px; background:url("../../../images/top/icon_scroll.png") no-repeat center top; background-size: cover; position: absolute; bottom:3%; left:50.5%; z-index:10;
       @media #{$middle} { width: 30px; height:48px; }
       @media #{$small} { display: none; }
     }
@@ -40,7 +40,7 @@
     }
   }
 
-  #introduction {  background:url(../../../images/top/bg_introduction.jpg) no-repeat center 50%; background-size: cover; line-height: 2;
+  #introduction {  background:url("../../../images/top/bg_introduction.jpg") no-repeat center 50%; background-size: cover; line-height: 2;
     h2.ttl { line-height: 1.4; font-weight: normal;  font-family: "source-han-sans-japanese",sans-serif; font-weight:200; padding: 3% 0; }
     @media #{$over-middle} { color:#fff; padding: 10% 0 7%;
       .inner { max-width: 60%; margin: 0 auto;  }
@@ -52,14 +52,14 @@
     @media #{$middle} {
       .inner { max-width: 90%; margin: 0 auto;  }
     }
-    @media #{$small} { background-attachment: fixed; color:#111; background:url(../../../images/top/bg_introduction_smp.jpg) no-repeat top right;
+    @media #{$small} { background-attachment: fixed; color:#111; background:url("../../../images/top/bg_introduction_smp.jpg") no-repeat top right;
       .inner { padding: 5%; }
       .ttl { font-size: 28px; font-weight: 400; }
       p { font-size: $font-size-xs;
         strong { padding: 0 0.7em 1em; display: block; font-size: 22px; line-height: 1.68; }
       }
     }
-    @media #{$mobile-side} { background:url(../../../images/top/bg_introduction.jpg) no-repeat center 50%; background-attachment: scroll;
+    @media #{$mobile-side} { background:url("../../../images/top/bg_introduction.jpg") no-repeat center 50%; background-attachment: scroll;
       .md-none { display: none; }
       p strong { font-size: 3vw; }
     }
@@ -94,12 +94,12 @@
     }
   } // message
 
-  #voice { background:url(../../../images/top/bg_voice.jpg) no-repeat top center; background-size: cover; position: relative;
+  #voice { background:url("../../../images/top/bg_voice.jpg") no-repeat top center; background-size: cover; position: relative;
     .ja-ttl { text-align: center; color:#fff; }
     .en-ttl { color:rgba(255,255,255,0.3); z-index:1; }
     .ttl {  font-family: "source-han-serif-japanese"; font-weight: normal; color:#f57c23; line-height: 1.65; }
     .lead { color:#fff; line-height: $shared-lh; }
-    .box { background: url(../../../images/top/icon_arrow_voice.png) no-repeat; background-position: bottom -20px right 10px; box-sizing: border-box; background-color: #fff;
+    .box { background: url("../../../images/top/icon_arrow_voice.png") no-repeat; background-position: bottom -20px right 10px; box-sizing: border-box; background-color: #fff;
       a { color:$base-color; }
     }
     @media #{$over-middle} { padding: 1% 0 5%;
@@ -127,20 +127,19 @@
     }
   } // voice
 
-  #benefits { background:url(../../../images/top/bg_benefits.jpg) no-repeat top center; background-size: cover; position: relative;
+  #benefits { background:url("../../../images/top/bg_benefits.jpg") no-repeat top center; background-size: cover; position: relative;
       .ja-ttl { text-align: center; color:#176100; }
       .en-ttl { color:rgba(44,185,0,0.3); z-index:1; }
       .block { position: relative;
-        .box { background: #56c377 url(../../../images/top/icon_arrow.png) no-repeat; background-position: bottom -35px right 15px; position: relative; z-index:1;  width: 100%;  }
+        .box { background: #56c377 url("../../../images/top/icon_arrow.png") no-repeat; background-position: bottom -35px right 15px; position: relative; z-index:1;  width: 100%;  }
         h3 { font-size: 2.2vw; font-weight: normal; text-align: center; margin-bottom: 0.8em; }
         p { line-height: $shared-lh; font-size: 14px; }
       }
       @media #{$over-middle} { padding: 1% 0 5%;
         .en-ttl { position: absolute; top:0; right:-1%; }
         .ja-ttl { padding: 9% 0 7%; }
-        .inner { max-width: 90%; margin: 0 auto; }
-        .block { width: 30%; float: left;
-          &:not(:last-child) { margin-right: 5%; }
+        .inner { max-width: 95%; margin: 0 auto; display: flex; }
+        .block { width: 33%; margin: 0 2.5%;
           .circle { position: relative; z-index:5; width: 300px; margin: 0 auto;
             img { border-radius:150px; width: 300px; height:300px; }
           }
@@ -175,7 +174,7 @@
     } // benefits
 
   #company {
-    .company-outline {  background:url(../../../images/top/bg_company.jpg) no-repeat -40% center; background-size: cover; position: relative;
+    .company-outline {  background:url("../../../images/top/bg_company.jpg") no-repeat -40% center; background-size: cover; position: relative;
       @media #{$middle} { background-position: 0 center; }
     }
     .ja-ttl { text-align: center; color:#fff; }
@@ -183,9 +182,9 @@
     .btn-cntlink { border-right:1px solid #b5b5b5;
       li { text-align: center; border: 1px solid #b5b5b5; border-right: none; }
       i { width: 60px; height:50px; display: inline-block; margin-right: 0.5em; }
-        .icon-message {  background:url(../../../images/top/icon_message.png) no-repeat left top; background-size: cover; }
-        .icon-hope {  background:url(../../../images/top/icon_hope.png) no-repeat left top; background-size: cover; }
-        .icon-faq {  background:url(../../../images/top/icon_faq.png) no-repeat left top; background-size: cover; }
+        .icon-message {  background:url("../../../images/top/icon_message.png") no-repeat left top; background-size: cover; }
+        .icon-hope {  background:url("../../../images/top/icon_hope.png") no-repeat left top; background-size: cover; }
+        .icon-faq {  background:url("../../../images/top/icon_faq.png") no-repeat left top; background-size: cover; }
     }
     @media #{$over-middle} {
         .company-outline { padding: 15% 0 8%; }
@@ -208,7 +207,7 @@
         }
       }
     @media #{$small} {
-      .company-outline { padding: 15% 0 3%; background:url(../../../images/top/bg_company_xs.jpg) no-repeat;  background-position: 60% 0; background-size:cover; }
+      .company-outline { padding: 15% 0 3%; background:url("../../../images/top/bg_company_xs.jpg") no-repeat;  background-position: 60% 0; background-size:cover; }
       .en-ttl { position: absolute; top:0; left:-2%; }
       .ja-ttl { text-align: center; width: 100%; margin-bottom: 5%; }
       .inner.xs { display: inline-block; padding: 3% 6%; }

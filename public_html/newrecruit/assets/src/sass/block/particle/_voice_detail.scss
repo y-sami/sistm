@@ -92,14 +92,14 @@
 			}
 
 			// Ð´Õæ‚€„e
-			&.voice01 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice01/photo02.jpg') no-repeat right top; background-size: 65%; }
-			&.voice02 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice02/photo02.jpg') no-repeat right top; background-size: 65%; }
-			&.voice03 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice03/photo02.jpg') no-repeat right top; background-size: 65%; }
-			&.voice04 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice04/photo02.jpg') no-repeat right top; background-size: 65%; }
-			&.voice05 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice05/photo02.jpg') no-repeat right top; background-size: 65%; }
-			&.voice06 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice06/photo02.jpg') no-repeat right top; background-size: 65%; }
-			&.voice07 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice07/photo02.jpg') no-repeat right top; background-size: 65%; }
-			&.voice08 .block02 { padding-top: 50px; background:url('/newrecruit/workstyle/voice/images/voice08/photo02.jpg') no-repeat right top; background-size: 65%; }
+			&.voice01 .block02 { padding-top: 50px; background:url('../../../workstyle/voice/images/voice01/photo02.jpg') no-repeat right top; background-size: 65%; }
+			&.voice02 .block02 { padding-top: 50px; background:url('../../../workstyle/voice/images/voice02/photo02.jpg') no-repeat right top; background-size: 65%; }
+			&.voice03 .block02 { padding-top: 50px; background:url('../../../workstyle/voice/images/voice03/photo02.jpg') no-repeat right top; background-size: 65%; }
+			&.voice04 .block02 { padding-top: 50px; background:url('../../../workstyle/voice/images/voice04/photo02.jpg') no-repeat right top; background-size: 65%; }
+			&.voice05 .block02 { padding-top: 50px; background:url('../../../workstyle/voice/images/voice05/photo02.jpg') no-repeat right top; background-size: 65%; }
+			&.voice06 .block02 { padding-top: 50px; background:url('../../../workstyle/voice/images/voice06/photo02.jpg') no-repeat right top; background-size: 65%; }
+			&.voice07 .block02 { padding-top: 50px; background:url('../../../workstyle/voice/images/voice07/photo02.jpg') no-repeat right top; background-size: 65%; }
+			&.voice08 .block02 { padding-top: 50px; background:url('../../../workstyle/voice/images/voice08/photo02.jpg') no-repeat right top; background-size: 65%; }
 			@media #{$small} {
 				.block02.xs-bg-none { background: none; padding-top: 0;
 					.photo { padding-top: 0; }
