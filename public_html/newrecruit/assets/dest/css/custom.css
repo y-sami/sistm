@@ -2746,13 +2746,6 @@ ul.list_disc li {
   vertical-align: middle;
 }
 
-@media only screen and (max-width: 767px) {
-  #recruit-information.new-graduate-outline #main .page-unker li, #recruit-information.career-outline #main .page-unker li {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-}
-
 #recruit-information.new-graduate-outline #main .page-unker li:not(:last-child), #recruit-information.career-outline #main .page-unker li:not(:last-child) {
   margin-right: 20px;
 }
@@ -2779,6 +2772,41 @@ ul.list_disc li {
   content: "\f107";
   font-size: 110%;
   margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 767px) {
+  #recruit-information.new-graduate-outline #main .page-unker, #recruit-information.career-outline #main .page-unker {
+    width: 90%;
+    margin: 20px auto 10px;
+  }
+  #recruit-information.new-graduate-outline #main .page-unker li, #recruit-information.career-outline #main .page-unker li {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  #recruit-information.new-graduate-outline #main .page-unker li:not(:last-child), #recruit-information.career-outline #main .page-unker li:not(:last-child) {
+    margin-right: 0;
+  }
+  #recruit-information.new-graduate-outline #main .page-unker li:before, #recruit-information.new-graduate-outline #main .page-unker li:after, #recruit-information.career-outline #main .page-unker li:before, #recruit-information.career-outline #main .page-unker li:after {
+    display: none;
+  }
+  #recruit-information.new-graduate-outline #main .page-unker li a, #recruit-information.career-outline #main .page-unker li a {
+    border: 1px solid #0081cc;
+    padding: 5% 3%;
+    display: block;
+    position: relative;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #recruit-information.new-graduate-outline #main .page-unker li a:after, #recruit-information.career-outline #main .page-unker li a:after {
+    margin-left: 0;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 #recruit-information.new-graduate-outline #main h4, #recruit-information.career-outline #main h4 {
@@ -2926,7 +2954,7 @@ ul.list_disc li {
   #recruit-information.new-graduate-outline #main .btn-entry, #recruit-information.career-outline #main .btn-entry {
     width: 500px;
     margin: 0 auto;
-    padding-top: 3%;
+    padding-top: 1.5%;
     margin-bottom: 2%;
   }
 }
@@ -2934,33 +2962,33 @@ ul.list_disc li {
 @media only screen and (max-width: 767px) {
   #recruit-information.new-graduate-outline #main .btn-entry, #recruit-information.career-outline #main .btn-entry {
     width: 90%;
-    margin: 6% auto 2%;
+    margin: 4% auto 2%;
   }
 }
 
-#recruit-information.entry #main .entry-info, #recruit-information.career-outline #main .entry-info {
-  background-color: #fafafa;
+#recruit-information.entry #main .entry-info, #recruit-information.career-outline #main .entry-info, #recruit-information.faq #main .entry-info {
   padding: 2%;
   line-height: 1.86;
   font-size: 90%;
 }
 
-#recruit-information.entry #main .entry-info .clipboard, #recruit-information.career-outline #main .entry-info .clipboard {
-  border: 1px solid #eaeaea;
+#recruit-information.entry #main .entry-info .clipboard, #recruit-information.career-outline #main .entry-info .clipboard, #recruit-information.faq #main .entry-info .clipboard {
+  border: 1px solid #fafafa;
+  background-color: #fafafa;
   margin: 2% 0;
   padding: 2%;
 }
 
-#recruit-information.entry #main .entry-info .list-disc, #recruit-information.career-outline #main .entry-info .list-disc {
+#recruit-information.entry #main .entry-info .list-disc, #recruit-information.career-outline #main .entry-info .list-disc, #recruit-information.faq #main .entry-info .list-disc {
   margin-left: 1.5em;
 }
 
-#recruit-information.entry #main .entry-info .list-disc li, #recruit-information.career-outline #main .entry-info .list-disc li {
+#recruit-information.entry #main .entry-info .list-disc li, #recruit-information.career-outline #main .entry-info .list-disc li, #recruit-information.faq #main .entry-info .list-disc li {
   list-style-type: disc;
   margin-bottom: 0;
 }
 
-#recruit-information.entry #main .entry-info .list-disc li span, #recruit-information.career-outline #main .entry-info .list-disc li span {
+#recruit-information.entry #main .entry-info .list-disc li span, #recruit-information.career-outline #main .entry-info .list-disc li span, #recruit-information.faq #main .entry-info .list-disc li span {
   font-size: 90%;
   display: block;
 }
@@ -3304,6 +3332,12 @@ ul.list_disc li {
   display: block;
 }
 
+@emdia only screen and (max-width:767px) {
+  #workstyle.voice-index .cnt dl dt span em.xs-none {
+    display: none;
+  }
+}
+
 #workstyle.voice-index .cnt dl dd {
   width: 32%;
   -ms-flex-item-align: end;
@@ -3446,13 +3480,6 @@ ul.list_disc li {
   vertical-align: middle;
 }
 
-@media only screen and (max-width: 767px) {
-  #workstyle.benefits .page-unker li {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-}
-
 #workstyle.benefits .page-unker li:not(:last-child) {
   margin-right: 20px;
 }
@@ -3479,6 +3506,32 @@ ul.list_disc li {
   content: "\f107";
   font-size: 110%;
   margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 767px) {
+  #workstyle.benefits .page-unker li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+  #workstyle.benefits .page-unker li:before, #workstyle.benefits .page-unker li:after {
+    display: none;
+  }
+  #workstyle.benefits .page-unker li a {
+    border: 1px solid #3ba312;
+    padding: 5% 3%;
+    display: block;
+    position: relative;
+  }
+  #workstyle.benefits .page-unker li a:after {
+    margin-left: 0;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 #workstyle.benefits h4 {
